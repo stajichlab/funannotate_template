@@ -60,3 +60,13 @@ sbatch -a 1-2 04a_antismash_local.sh
 ```bash
 sbatch -a 1-3 04b_iprscan.sh
 ```
+
+# Optional - update
+
+If you have RNAseq you can do an update.
+
+# Functional annotation
+
+```bash
+sbatch -a 1-3 06_annotate_function.sh
+```
