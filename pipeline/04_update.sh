@@ -44,7 +44,7 @@ export FUNANNOTATE_DB=/bigdata/stajichlab/shared/lib/funannotate_db
 export PASACONF=$HOME/pasa.config.txt
 SBT=$(realpath lib/authors.sbt) # this can be changed
 IFS=,
-tail -n +2 $SAMPFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT SRA LOCUSTAG
+tail -n +2 $SAMPFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT LOCUSTAG
 do
 	#  if you want to use sqlite remove the mysql
 	#  funannotate update --cpus $CPU -i $OUTDIR/$BASE --out $OUTDIR/$BASE --sbt $SBT --memory $MEM

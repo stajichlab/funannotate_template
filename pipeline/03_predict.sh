@@ -47,7 +47,7 @@ fi
 SEED_SPECIES=anidulans
 
 IFS=,
-tail -n +2 $SAMPFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT SRA LOCUSTAG
+tail -n +2 $SAMPFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT LOCUSTAG
 do
     SEQCENTER=JGI
     BASE=$(echo -n "$SPECIES $STRAIN" | perl -p -e 's/\s+/_/g')

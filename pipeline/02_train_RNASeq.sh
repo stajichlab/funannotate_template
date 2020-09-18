@@ -42,7 +42,7 @@ INDIR=genomes
 RNAFOLDER=lib/RNASeq
 SAMPLEFILE=samples.csv
 IFS=,
-tail -n +2 $SAMPLEFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT SRA LOCUSTAG
+tail -n +2 $SAMPLEFILE | sed -n ${N}p | while read SPECIES STRAIN PHYLUM BIOSAMPLE BIOPROJECT LOCUSTAG
 do
     echo "SPECIES is $SPECIES"
     SPECIESNOSPACE=$(echo -n "$SPECIES" | perl -p -e 's/\s+/_/g')
