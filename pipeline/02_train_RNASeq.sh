@@ -61,6 +61,7 @@ do
     echo $ODIR/$BASE/training
     funannotate train -i $MASKED -o $ODIR/$BASE \
    	--jaccard_clip --species "$SPECIES" --isolate $STRAIN \
-  	--cpus $CPUS --memory $MEM --pasa_db mysql \
+  	--cpus $CPUS --memory $MEM \
   	--left $RNAFOLDER/$SPECIESNOSPACE/Forward.fq.gz --right $RNAFOLDER/$SPECIESNOSPACE/Reverse.fq.gz
+    # add --pasa_db mysql to the options above if you have installed mysql and configured it in your ~/pasa.config.txt file
 done
