@@ -72,7 +72,9 @@ sbatch -a 1-3 04b_iprscan.sh
 
 # Optional - update
 
-If you have RNAseq you can do an update.
+If you have RNAseq you can do an update. For this workflow this would be already aligned reads and PASA database created in the training step. So the input to this is only the previously run training data and the input folder for annotation.
+
+If you are doing an update on an already annotated genome obtained from genbank you will want to provide forward and reverse reads (`--left` and `--right`).
 
 # Functional annotation
 
