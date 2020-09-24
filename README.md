@@ -38,11 +38,20 @@ MYSQLSERVER=localhost
 MYSQL_RW_USER=xxxxxx
 MYSQL_RW_PASSWORD=xxxxxx
 ```
+
+On the UCR HPCC [here are directions](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/singularity/mariadb) on how to setup your own mysql instance in your account using [singularity](https://sylabs.io/docs/). If you were running funannotate on your own linux/mac setup you would just do a native mysql/mariadb install and have the server running on your local machine. 
+
+The HPCC instructions include the steps to initialize a database followed by you will start a job that will be running which has the mysql instance. This db server will need to be started before you start annotating and be shutdown when you are finished. I often give it a long life like 2 weeks but it can be stopped at any point too.
+
 ## Run Training
 
 sbatch 02_train_RNASeq.sh
 
 # Gene Prediction
+
+## Input needs
+
+Informant proteins and transcripts. Funannotate will use the uniprot_swissprot database by default (installed in `$FUNANNOTATE_DB`).
 
 ```bash
 sbatch -a 1-2 03_predict.sh
