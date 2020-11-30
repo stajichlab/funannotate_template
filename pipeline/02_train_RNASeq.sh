@@ -12,7 +12,7 @@ PROGNAME=$(basename $0)
 echo "PROGRAM is $PROGNAME"
 # Load software
 #module load funannotate/development
-module load funannotate/1.8.0
+module load funannotate/1.8.2
 MEM=64G
 
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/3.3/config)

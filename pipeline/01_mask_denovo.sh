@@ -43,7 +43,7 @@ do
      module unload python
      module unload miniconda2
      module unload anaconda3
-     module load funannotate/1.8.0
+     module load funannotate/1.8.2
      export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/3.3/config)
      if [ -f repeat_library/${name}.repeatmodeler-library.fasta ]; then
     	  LIBRARY=$(realpath repeat_library/${name}.repeatmodeler-library.fasta)

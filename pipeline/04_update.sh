@@ -7,7 +7,7 @@ module unload miniconda3
 module load anaconda3
 module unload perl
 module unload python
-module load funannotate/1.8.0
+module load funannotate/1.8.2
 
 #PASAHOMEPATH=$(dirname `which Launch_PASA_pipeline.pl`)
 #TRINITYHOMEPATH=$(dirname `which Trinity`)

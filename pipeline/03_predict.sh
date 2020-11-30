@@ -5,7 +5,7 @@ module unload miniconda2
 module unload anaconda3
 module unload perl
 module unload python
-module load funannotate/1.8.0
+module load funannotate/1.8.2
 
 CPU=1
 if [ $SLURM_CPUS_ON_NODE ]; then
