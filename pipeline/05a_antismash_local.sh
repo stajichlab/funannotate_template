@@ -4,8 +4,8 @@
 module unload miniconda2
 module unload miniconda3
 module load anaconda3
-module load antismash/5.1.1
-module load antismash/5.1.1
+module load antismash/5.1.2
+module load antismash/5.1.2
 which perl
 which antismash
 hostname
