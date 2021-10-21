@@ -1,4 +1,4 @@
-# funannotate_template
+# Funannotate Template
 Project template for doing a funannotate annotation set.
 
 To use this do not clone it directly, but instead use the 'use this template' to create your own repository from this repo.
@@ -8,6 +8,8 @@ To use this do not clone it directly, but instead use the 'use this template' to
 ```bash
 sbatch -a 1-2 01_mask_denovo.sh
 ```
+
+Note this has problems running de-novo Repeatmodeler in v2 of repeatmodeler, need to develop the library manually. More description to be added here.
 
 # Optional steps - with RNASeq
 
