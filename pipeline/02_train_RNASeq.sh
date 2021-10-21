@@ -2,18 +2,16 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=16
-#SBATCH --mem 64gb -p intel
+#SBATCH --mem 128gb -p intel
 #SBATCH --time=3-00:15:00
 #SBATCH --output=logs/train.%a.log
 #SBATCH --job-name="TrainFun"
 
 # Define program name
-PROGNAME=$(basename $0)
-echo "PROGRAM is $PROGNAME"
 # Load software
-#module load funannotate/development
-module load funannotate/1.8.2
-MEM=64G
+module unload miniconda2 miniconda3 anaconda3 perl python
+module load funannotate
+MEM=128G
 
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/3.3/config)
 # Set some vars
