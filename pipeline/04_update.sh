@@ -1,13 +1,8 @@
 #!/bin/bash
 #SBATCH -p batch --time 2-0:00:00 --ntasks 16 --nodes 1 --mem 24G --out logs/update.%a.log
 
-module unload perl
-module unload miniconda2
-module unload miniconda3
-module load anaconda3
-module unload perl
-module unload python
-module load funannotate/1.8.2
+module unload perl miniconda2 miniconda3 anaconda3 python
+module load funannotate
 
 #PASAHOMEPATH=$(dirname `which Launch_PASA_pipeline.pl`)
 #TRINITYHOMEPATH=$(dirname `which Trinity`)
