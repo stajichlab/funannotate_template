@@ -5,11 +5,8 @@
 #SBATCH --time=2-0:00:00
 #SBATCH -p intel -J annotfunc
 
-module unload miniconda2
-module unload miniconda3
-module unload perl
-module unload python
-module load funannotate/1.8.2
+module unload miniconda2 miniconda3 perl python
+module load funannotate
 module load phobius
 
 export FUNANNOTATE_DB=/bigdata/stajichlab/shared/lib/funannotate_db
