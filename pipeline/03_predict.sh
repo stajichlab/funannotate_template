@@ -1,8 +1,6 @@
 #!/bin/bash
 #SBATCH -p batch --time 3-0:00:00 --ntasks 16 --nodes 1 --mem 24G --out logs/predict.%a.log
 
-module unload miniconda2 miniconda3 anaconda3
-module unload perl python
 module load funannotate
 
 # this will define $SCRATCH variable if you don't have this on your system you can basically do this depending on
