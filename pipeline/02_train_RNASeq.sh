@@ -9,7 +9,6 @@
 
 # Define program name
 # Load software
-module unload miniconda2 miniconda3 anaconda3 perl python
 module load funannotate
 MEM=128G
 
