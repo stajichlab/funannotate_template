@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -l
 #SBATCH --nodes=1
 #SBATCH --ntasks=16 --mem 16gb
 #SBATCH --output=logs/annotfunc.%a.log
