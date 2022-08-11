@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash -l
 #SBATCH -p batch --time 2-0:00:00 --ntasks 8 --nodes 1 --mem 24G --out logs/mask.%a.log
 
 CPU=1
