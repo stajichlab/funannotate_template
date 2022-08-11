@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash -l
 #SBATCH -p batch --time 3-0:00:00 --ntasks 16 --nodes 1 --mem 24G --out logs/predict.%a.log
 
 module load funannotate
