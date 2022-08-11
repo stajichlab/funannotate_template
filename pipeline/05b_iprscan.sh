@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash -l
 #SBATCH --ntasks 24 --nodes 1 --mem 96G -p intel
 #SBATCH --time 72:00:00 --out logs/iprscan.%a.log
 module unload miniconda2
