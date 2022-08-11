@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash -l
 #SBATCH --nodes 1 --ntasks 8 --mem 16G --out logs/antismash.%a.log -J antismash
 
 module load antismash
